@@ -1,0 +1,10 @@
+[
+    {
+      "id": 0,
+      "name": "John",
+      "prodi" : "teknik informatika",
+      "tahun-masuk" : "2016",
+      "tahun-keluar" : "2030",
+      "ipk": "3,53"
+    }
+  ]
