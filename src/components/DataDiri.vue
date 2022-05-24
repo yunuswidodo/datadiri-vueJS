@@ -15,13 +15,8 @@
                     <div class="card-judul">
                         <h2> &nbsp RIWAYAT PRIBADI</h2>
                     </div>
-                    <div class="card-content">
-                        <span>Saya seorang programmer,
-                             saya mempunyai keahlian dibidang komputer 
-                             khususnya dalam pengemabangan sebuah aplikasi, 
-                             saya mempunyai pengalaman pekerjaan sebagai programmer 
-                             dibeberapa perusahaan dengan menggunakan 
-                             berbagai macam tools  dan bahasa pemograman, 
+                    <div class="card-content" v-for="desc in descriptions">
+                        <span>{{desc.desc}}
                         </span>
                     </div>
                 </div>
@@ -99,6 +94,7 @@
     import pendidikanData from "../pendidikan.json";
     import skillsData from "../skills.json";
     import contactsData from "../contacts.json";
+    import descriptionsData from "../descriptions.json";
 
     export default {
       data() {
@@ -106,7 +102,8 @@
           users: usersData,
           pendidikan: pendidikanData,
           skills: skillsData,
-          contacts: contactsData
+          contacts: contactsData,
+          descriptions : descriptionsData
         };
       },
     };
