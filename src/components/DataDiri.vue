@@ -29,24 +29,18 @@
                     <div class="card-judul">
                         <h2> &nbsp SKILL</h2>
                     </div>
-                    <div class="card-content">
-                        <span>-PHP</span><br>
-                        <span>-JAVASCRIPT</span><br>
-                        <span>-Bostrap</span><br>
-                        <span>-Laravel</span><br>
-                        <span>-Jquery</span><br>
-                        <span>-HTML & CSS</span><br>
-                        <span>-Control Version Git & SVN</span><br>
+                    <div class="card-content" v-for="skill in skills">
+                        <span>-{{skill.name}}</span><br>
                     </div>
                 </div>
                 <div class="card card-kontak">
                     <div class="card-judul">
                         <h2> &nbsp KONTAK</h2>
                     </div>
-                    <div class="card-content">
-                        <span>Nomor Hp/Wa :</span><br>
-                        <span>eMail : </span><br>
-                        <span>Alamat :</span><br>
+                    <div class="card-content" v-for="contact in contacts">
+                        <span>Nomor Hp/Wa : {{contact.nomor}}</span><br>
+                        <span>eMail : {{contact.eMail}}</span><br>
+                        <span>Alamat : {{contact.address}}</span><br>
                     </div>
                 </div>
             </div>
@@ -88,19 +82,37 @@
                     <div class="card-judul">
                         <h2> &nbsp LATAR BELAKANG PENDIDIKAN</h2>
                     </div>
-                    <div class="card-content">
-                        <h3>Universitas Narotama</h3>
-                        <span>Teknik Informatika   |  2016 -2020</span><br>
-                        <span>IPK : 3,53</span><br>
+                    <div class="card-content" v-for="pendidikan in pendidikan">
+                        <h3>{{pendidikan.name}}</h3>
+                        <span>{{pendidikan.prodi}} | {{pendidikan.tahun-masuk}} - {{pendidikan.tahun-keluar}}</span><br>
+                        <span>IPK : {{pendidikan.ipk}}</span><br>
                         <br> <br>
                     </div>
                 </div>
             </div>
         </div>
-        
     </div>
-  </template>
+</template>
 
+  <script>
+    import usersData from "../users.json";
+    import pendidikanData from "../pendidikan.json";
+    import skillsData from "../skills.json";
+    import contactsData from "../contacts.json";
+
+    export default {
+      data() {
+        return {
+          users: usersData,
+          pendidikan: pendidikanData,
+          skills: skillsData,
+          contacts: contactsData
+        };
+      },
+    };
+
+    
+    </script>
   
   <style scoped>
     .container 
@@ -171,7 +183,6 @@
     .card-content
     {
         margin-top: 10px;
-        border: solid 2px rosybrown;
         margin-left: 10px;
     }
     /* end global card  */
