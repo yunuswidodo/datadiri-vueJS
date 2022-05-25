@@ -2,7 +2,7 @@
     <div class="container">
         <div class="header" v-for="header in headers">
             <div class="gambar">
-                <img alt="Vue logo" class="logo" src="../assets/img/AhmadYunusWidodo.jpg" width="125" height="125" />
+                <img alt="Vue logo" class="logo" src="../assets/img/AhmadYunusWidodo.jpg" width="125" height="125" />  
             </div>
             <div class="judul">
                 <h1>{{header.name}}</h1>
@@ -56,10 +56,10 @@
                     <div class="card-judul">
                         <h2> &nbsp LATAR BELAKANG PENDIDIKAN</h2>
                     </div>
-                    <div class="card-content" v-for="pendidikan in pendidikan">
-                        <h3>{{pendidikan.name}}</h3>
-                        <span>{{pendidikan.prodi}} | {{pendidikan.tahunmasuk}} - {{pendidikan.tahunkeluar}}</span><br>
-                        <span>IPK : {{pendidikan.ipk}}</span><br>
+                    <div class="card-content" v-for="study in studies">
+                        <h3>{{study.name}}</h3>
+                        <span>{{study.major}} | {{study.yearofentry}} - {{study.yearofout}}</span><br>
+                        <span>IPK : {{study.ipk}}</span><br>
                         <br> <br>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
 
   <script>
     import usersData from "../users.json";
-    import pendidikanData from "../pendidikan.json";
+    import studiesData from "../studies.json";
     import skillsData from "../skills.json";
     import contactsData from "../contacts.json";
     import descriptionsData from "../descriptions.json";
@@ -82,7 +82,7 @@
       data() {
         return {
           users: usersData,
-          pendidikan: pendidikanData,
+          studies: studiesData,
           skills: skillsData,
           contacts: contactsData,
           descriptions : descriptionsData,
