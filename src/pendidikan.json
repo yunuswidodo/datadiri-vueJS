@@ -3,8 +3,8 @@
       "id": 0,
       "name": "universitas Narotama",
       "prodi" : "teknik informatika",
-      "tahun-masuk" : "2016",
-      "tahun-keluar" : "2030",
+      "tahunmasuk" : "2016",
+      "tahunkeluar" : "2020",
       "ipk": "3,53"
     }
   ]

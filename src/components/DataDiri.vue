@@ -79,7 +79,7 @@
                     </div>
                     <div class="card-content" v-for="pendidikan in pendidikan">
                         <h3>{{pendidikan.name}}</h3>
-                        <span>{{pendidikan.prodi}} | {{pendidikan.tahun-masuk}} - {{pendidikan.tahun-keluar}}</span><br>
+                        <span>{{pendidikan.prodi}} | {{pendidikan.tahunmasuk}} - {{pendidikan.tahunkeluar}}</span><br>
                         <span>IPK : {{pendidikan.ipk}}</span><br>
                         <br> <br>
                     </div>
@@ -89,12 +89,14 @@
     </div>
 </template>
 
+
   <script>
     import usersData from "../users.json";
     import pendidikanData from "../pendidikan.json";
     import skillsData from "../skills.json";
     import contactsData from "../contacts.json";
     import descriptionsData from "../descriptions.json";
+    import experiencesData from "../experiences.json"
 
     export default {
       data() {
@@ -103,11 +105,13 @@
           pendidikan: pendidikanData,
           skills: skillsData,
           contacts: contactsData,
-          descriptions : descriptionsData
+          descriptions : descriptionsData,
+          exp: experiencesData
         };
       },
     };
 
+    console.log("#detail-job");
     
     </script>
   
