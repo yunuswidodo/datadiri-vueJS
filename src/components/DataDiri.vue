@@ -1,12 +1,12 @@
 <template>
     <div class="container">
-        <div class="header">
+        <div class="header" v-for="header in headers">
             <div class="gambar">
                 <img alt="Vue logo" class="logo" src="../assets/img/AhmadYunusWidodo.jpg" width="125" height="125" />
             </div>
             <div class="judul">
-                <h1>AHMAD YUNUS WIDODO</h1>
-                <span>programmer</span>
+                <h1>{{header.name}}</h1>
+                <span>{{header.profesi}}</span>
             </div>
         </div>
         <div class="content">
@@ -76,6 +76,7 @@
     import contactsData from "../contacts.json";
     import descriptionsData from "../descriptions.json";
     import experiencesData from "../experiences.json"
+    import headersData from "../header.json"
 
     export default {
       data() {
@@ -85,7 +86,8 @@
           skills: skillsData,
           contacts: contactsData,
           descriptions : descriptionsData,
-          exps: experiencesData
+          exps: experiencesData,
+          headers: headersData
         };
       },
     };
@@ -166,13 +168,6 @@
         margin-left: 10px;
     }
     /* end global card  */
-
-    /* selector only class this */
-    .card, .card-riwayad-pribadi, .card-content:only-child
-    {
-        /* color: red; */
-        
-    }
 
     .card-skil {
         margin-bottom: 60px !important;
