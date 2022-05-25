@@ -3,18 +3,73 @@
       "id": 0,
       "postion": "intership Frontend  Developer", 
       "comapanyname": "Jobhun.id", 
-      "years-of-work": "2019 - 2019",
+      "yearwork": "2019 - 2019",
       "job" :[
           {
-          "id" : 0,
-          "jobdetail": " Membangun tampilan website menggunakan  Bootstrap-vue.JS"
+          "jobdetail": "Membangun tampilan website menggunakan  Bootstrap-vue.JS"
           }, 
           {
-          "id" : 1,
-          "jobdetail": " Membangun tampilan website yas"
+          "jobdetail": "Membangun website dengan Web Mobile First Besign"
+          }, 
+          {
+          "jobdetail": "Berkolaborasi dengan Backend Developer"
+          }, 
+          {
+          "jobdetail": "Mengambil data dari Backend via API JSON untuk ditampilkan"
+          }, 
+          {
+          "jobdetail": "Mengambil data dari Backend via API JSON untuk ditampilkan"
+          }, 
+          {
+          "jobdetail": "Bekerja bersama sesama developer dengan menggunakan GIT (github)   control version"
+          }
+
+      ]
+    },
+    {
+      "id": 1,
+      "postion": "Destop Developer", 
+      "comapanyname": "Software Gallery", 
+      "yearwork": "2020 - 2021",
+      "job" :[
+          {
+          "jobdetail": "Membuat desain laporan  menggunakan Fastrport .fr3"
+          }, 
+          {
+          "jobdetail": "Menampilkan data yang dibutuhkan oleh user  dengan Query SQL"
+          }, 
+          {
+          "jobdetail": "Membuat tampilan aplikasi berbasis destop"
+          }
+      ]
+    },
+    {
+      "id": 2,
+      "postion": "Front End Developer", 
+      "comapanyname": "Grand Devine Indonesia", 
+      "yearwork": "2021 - 2022",
+      "job" :[
+          {
+          "jobdetail": "Mendesain tampilan website Enterprise menggunakan boostrap 5 dan Jquery.JS"
+          }, 
+          {
+          "jobdetail": "Templating website Enterprise menggunakan boostrap 5"
+          }, 
+          {
+          "jobdetail": "Memperbaiki tampilan website yang kurang user friendly"
+          }, 
+          {
+          "jobdetail": "Membangun tampilan website dengan tampilan RWD (resposive web design)"
+          }, 
+          {
+          "jobdetail": "Membuat Map menggunakan Leaflet.JS dan API Mapbox"
+          }, 
+          {
+          "jobdetail": "Bekerja bersama sesama developer dengan menggunakan SVN (tortoise) control version"
           }
       ]
     }
+ 
  
   ] 
 

@@ -40,37 +40,16 @@
                 </div>
             </div>
             <div class="content-right">
-                <div class="card pengalaman-Kerja">
+                <div class="card pengalaman-Kerja" >
                     <div class="card-judul">
                         <h2> &nbsp PENGALAMAN KERJA</h2>
                     </div>
-                    <div class="card-content">
-                        <h3>Intership Frontend Developer</h3>
-                        <h4>jobhun.co.id | 2019 - 2019</h4>
-                        <span>- Membangun tampilan website menggunakan  Bootstrap-vue.JS</span> <br>
-                        <span>- Membangun website dengan Web Mobile First Besign</span> <br>
-                        <span>- Berkolaborasi dengan Backend Developer </span> <br>
-                        <span>- Mengambil data dari Backend via API JSON untuk ditampilkan</span> <br>
-                        <span>- Bekerja bersama sesama developer dengan menggunakan GIT (github)   control version</span> <br>
-                    </div>
-                    
-                    <div class="card-content">
-                        <h3>Destop Developer</h3>
-                        <h4>Software Gallery |  2020 - 2021</h4>
-                        <span>- Membuat desain laporan  menggunakan Fastrport .fr3</span> <br>
-                        <span>- Menampilkan data yang dibutuhkan oleh user  dengan Query SQL</span> <br>
-                        <span>- Membuat tampilan aplikasi berbasis destop  </span> <br>
-                    </div>
-                    
-                    <div class="card-content">
-                        <h3>Front End Developer</h3>
-                        <h4>Grand Devine Indonesia | 2021 - 2022</h4>
-                        <span>- Mendesain tampilan website Enterprise menggunakan boostrap 5 dan Jquery.JS </span> <br>
-                        <span>- Templating website Enterprise menggunakan boostrap 5 </span> <br>
-                        <span>- Memperbaiki tampilan website yang kurang user friendly </span><br>
-                        <span>- Membangun tampilan website dengan tampilan RWD (resposive web design)</span><br>
-                        <span>- Membuat Map menggunakan Leaflet.JS dan API Mapbox </span>
-                        <span>- Bekerja bersama sesama developer dengan menggunakan SVN (tortoise) control version</span>
+                    <div class="card-content"  v-for="exp in exps">
+                        <h3>{{exp.postion}}</h3>
+                        <h4>{{exp.comapanyname}} | {{exp.yearwork}}</h4>
+                            <div class="job-desc" v-for="jobdes in exp.job"> 
+                                <span>{{jobdes.jobdetail}}</span> <br>
+                            </div>
                     </div>
                 </div>
                 <div class="card card-pendidikan">
@@ -106,7 +85,7 @@
           skills: skillsData,
           contacts: contactsData,
           descriptions : descriptionsData,
-          exp: experiencesData
+          exps: experiencesData
         };
       },
     };
